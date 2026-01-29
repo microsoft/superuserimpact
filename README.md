@@ -41,7 +41,7 @@ Insights into how super users of Microsoft Copilot emerge—and learn how to sca
 
   <br>
 
-  <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/Super%20User%20Impact%20Gif.gif" alt="Super User Impact Dashboard Preview" width="100%" />
+  <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/report-preview.gif" alt="Super User Impact Dashboard Preview" width="100%" />
 
 </details>
 
