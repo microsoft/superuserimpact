@@ -15,6 +15,8 @@
 
 Insights into how super users of Microsoft Copilot emerge—and learn how to scale their success across your organization.
 
+[Download Latest (ZIP)](https://github.com/microsoft/superuserimpact/archive/refs/heads/main.zip)  
+
 **Additional Resources:**
 [Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/)
 [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
