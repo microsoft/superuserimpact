@@ -3,12 +3,8 @@
 
 Insights into how super users of Microsoft Copilot emerge—and learn how to scale their success across your organization.
 
-[Download Latest (ZIP)](https://github.com/microsoft/DecodingSuperUsage/archive/refs/heads/main.zip)  
-[Archived Templates](https://github.com/microsoft/DecodingSuperUsage/tree/DecodingSuperUsage/Archived%20Templates)  
-[Super Usage Interpretation Guide](https://github.com/microsoft/DecodingSuperUsage/blob/DecodingSuperUsage/Super%20User%202.0%20-%20Interpretation%20Guide.pdf)  
-[Super Usage Storyboard PPT Template](https://github.com/microsoft/DecodingSuperUsage/blob/f6634a07ff4c9d754620e981082206032d47d9ca/Superuser%20Impact%20-%20Storyboard%20v4.pptx)  
-[Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/)  
-[Viva Insights R Library](https://microsoft.github.io/vivainsights/)
+[Download Latest (ZIP)](https://github.com/microsoft/superuserimpact/archive/refs/heads/main.zip)  
+
 
 <details>
   <summary><span style="font-size:1.15em;">🎬 <b>See the Report in Action (Video)</b></span></summary>
