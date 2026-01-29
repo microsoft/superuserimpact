@@ -20,15 +20,6 @@ Insights into how super users of Microsoft Copilot emerge—and learn how to sca
 [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
 
 <details open>
-  <summary>▶️ <b>Super User Adoption Dashboard Preview</b></summary>
-
-  <br>
-
-  <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/SuperUser.gif" alt="Super User Adoption Dashboard Preview" width="100%" />
-
-</details>
-
-<details open>
   <summary>▶️ <b>Super User Impact Dashboard Preview</b></summary>
 
   <br>
@@ -74,13 +65,9 @@ Where are the super users concentrated? Where migh t you focus enablement effort
 
 ## Templates
 
-This repository includes four Power BI templates in two categories:
+This repository includes two Power BI templates:
 
-**Super User Adoption Templates**
-- **Template - Super User Adoption (CSV Input).pbit**: Analyzes Copilot adoption patterns and super user emergence using CSV exports. Best for one-time analysis or sharing with external stakeholders.
-- **Template - Super User Adoption - (Viva Insights).pbit**: Same analytics with direct Viva Insights connection. Enables automatic refresh for ongoing monitoring.
-
-**Super User Impact Templates**  
+**Super User Impact Templates**
 - **Template - Super User Impact - (CSV Input).pbit**: Measures Copilot's impact on work patterns and productivity using CSV data. Includes estimated value and sentiment analysis.
 - **Template - Super User Impact - (Viva Insights Input).pbit**: Same analytics with direct Viva Insights connection for continuous impact tracking.
 
