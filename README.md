@@ -19,14 +19,6 @@ Insights into how super users of Microsoft Copilot emerge—and learn how to sca
 [Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/)
 [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
 
-<details>
-  <summary><span style="font-size:1.15em;">🎬 <b>See the Report in Action (Video)</b></span></summary>
-  <br>
-  <a href="https://www.youtube.com/watch?v=40hsLAIiiD8" target="_blank">
-    <img src="https://img.youtube.com/vi/40hsLAIiiD8/0.jpg" alt="Copilot Super Usage Report Video Thumbnail" width="100%" />
-  </a>
-</details>
-
 <details open>
   <summary>▶️ <b>Super User Adoption Dashboard Preview</b></summary>
 
