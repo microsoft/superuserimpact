@@ -49,17 +49,20 @@ Super usage patterns show how experimentation turns into durable habits. Identif
 
 ## Insights you can Explore
 
-**Super usage profile:**  
-What does super usage look like? What do super users use Copilot for? Are you seeing signs of workflow changes?
+**Super Usage Profile**
+What defines super usage, which Copilot scenarios super users rely on, and whether their behavior shows early signs of workflow change.
 
-**Journey:**  
-How did some users turn into super users? What did super users do differently in the early days of license activation? How fast are you producing super users? Is super usage durable?
+**Work Impact**
+How users progress into super users, is this population growing over time?
 
-**Work patterns:**  
-What work patterns are associated with super users? Are you seeing any early impact?
+**Work Patterns**
+The distinctive work patterns of super users—including meeting habits, collaboration behaviors, and after‑hours signals.
 
-**Change management:**  
-Where are the super users concentrated? Where migh t you focus enablement efforts?
+**How They Get Work Done**
+How super users leverage Copilot across surfaces and features to drive productivity in their daily workflows.
+
+**Value**
+How assisted value differs between super users and everyone else, and what this reveals about the incremental impact of deep Copilot engagement.
 
 ---
 
