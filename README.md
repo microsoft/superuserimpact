@@ -1,13 +1,22 @@
 # Super Usage Analysis Template (Copilot + Viva Insights)
 ![Current Version](https://img.shields.io/badge/version-31-blue)
 
+## 📥 Quick Downloads
+
+**Power BI Templates (.pbit):**
+- [Download: Super User Impact v3 (CSV Input)](https://github.com/microsoft/superuserimpact/raw/main/Template%20-%20Super%20User%20Impact%20v3%20-%20(CSV%20Input)%20-%20Template.pbit)
+- [Download: Super User Impact v3 (Viva Insights Input)](https://github.com/microsoft/superuserimpact/raw/main/Template%20-%20Super%20User%20Impact%20v3%20-%20(Viva%20Insights%20Input)%20-%20Template.pbit)
+- [Download: Super User Impact v3 (CSV Input) - en-US](https://github.com/microsoft/superuserimpact/raw/main/en-US_Template%20-%20Super%20User%20Impact%20v3%20-%20(CSV%20Input)%20-%20Template.pbit)
+
+**Presentation Template:**
+- [Download: Superuser Impact Storyboard v4 (PowerPoint)](https://github.com/microsoft/superuserimpact/raw/main/Superuser%20Impact%20-%20Storyboard%20v4.pptx)
+
+---
+
 Insights into how super users of Microsoft Copilot emerge—and learn how to scale their success across your organization.
 
-[Download Latest (ZIP)](https://github.com/microsoft/DecodingSuperUsage/archive/refs/heads/main.zip)  
-[Archived Templates](https://github.com/microsoft/DecodingSuperUsage/tree/DecodingSuperUsage/Archived%20Templates)  
-[Super Usage Interpretation Guide](https://github.com/microsoft/DecodingSuperUsage/blob/DecodingSuperUsage/Super%20User%202.0%20-%20Interpretation%20Guide.pdf)  
-[Super Usage Storyboard PPT Template](https://github.com/microsoft/DecodingSuperUsage/blob/f6634a07ff4c9d754620e981082206032d47d9ca/Superuser%20Impact%20-%20Storyboard%20v4.pptx)  
-[Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/)  
+**Additional Resources:**
+[Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/)
 [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
 
 <details>
@@ -23,7 +32,7 @@ Insights into how super users of Microsoft Copilot emerge—and learn how to sca
 
   <br>
 
-  <img src="https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/SuperUser.gif" alt="Super User Adoption Dashboard Preview" width="100%" />
+  <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/SuperUser.gif" alt="Super User Adoption Dashboard Preview" width="100%" />
 
 </details>
 
@@ -32,7 +41,7 @@ Insights into how super users of Microsoft Copilot emerge—and learn how to sca
 
   <br>
 
-  <img src="https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/Super%20User%20Impact%20Gif.gif" alt="Super User Impact Dashboard Preview" width="100%" />
+  <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/report-preview.gif" alt="Super User Impact Dashboard Preview" width="100%" />
 
 </details>
 
@@ -111,10 +120,10 @@ These tools enable you to build custom super usage analyses, automate reporting 
 
 1. Open: [https://analysis.insights.cloud.microsoft/](https://analysis.insights.cloud.microsoft/) and go to Create Analysis.
    
-   ![Landing page showing Create Analysis](https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/VivaLanding1.png)
+   ![Landing page showing Create Analysis](https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/VivaLanding1.png)
 3. Select **Person Query** → *Set up analysis*.
    
-   ![Person query card highlighted](https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/PersonQuery.png)
+   ![Person query card highlighted](https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/PersonQuery.png)
    
 5. Configure:
    - **Time period**: Last 6 months (rolling)
@@ -123,7 +132,7 @@ These tools enable you to build custom super usage analyses, automate reporting 
    - **Filter**: Is Active = True (if available) - You can validate the number of employees here. 
    - **Attributes**: Include Organization and Function Type (others optional) - this is the last box on this page. 
 6. Select **ALL required metrics** (missing one will cause blank visuals).  
-   ![Required metrics screenshot](https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/groupings.png)
+   ![Required metrics screenshot](https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/groupings.png)
 7. Save & Run query. Wait until **Status = Completed** (first runs can take several hours). Do not export mid-processing.
 
 ---
@@ -143,9 +152,9 @@ These tools enable you to build custom super usage analyses, automate reporting 
 <summary><strong>Setup Direct Query to Viva Insights</strong></summary>
 
 - From Person Queries page, copy link (row/link icon).  
-  ![Query row showing link icon](https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/AnalysisResultsLink.png)
+  ![Query row showing link icon](https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/AnalysisResultsLink.png)
 - Extract **partitionId** and **queryId** from URL. Confirm 36 characters each.  
-  ![Partition and Query IDs highlighted](https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/CopyIdentifiers.png)
+  ![Partition and Query IDs highlighted](https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/CopyIdentifiers.png)
 - Open `Template Super Usage Analysis (Direct Query).pbit` → paste IDs when prompted.
 - Sign in with your work account. Initial load may take 1–3 minutes.
 - Save PBIX and publish to Power BI workspace. No scheduled refresh required (Direct Query auto-refreshes weekly).
@@ -191,14 +200,15 @@ These tools enable you to build custom super usage analyses, automate reporting 
 
 Leverage the guides below to frame your narrative and drive action:
 
-- Super Usage Interpretation Guide (PDF): [Super Usage Interpretation Guide](https://github.com/microsoft/DecodingSuperUsage/blob/DecodingSuperUsage/Super%20User%202.0%20-%20Interpretation%20Guide.pdf)
-- Storyboard presentation template: [Super Usage Storyboard PPT Template](https://github.com/microsoft/DecodingSuperUsage/blob/224b5d8fa5742b9c405036c76691a783e0199b55/Superuser%20Analysis%20-%20Storyboard%20v3.pptx)  
+- [Copilot Assisted Hours PBI Formulas Guide (PDF)](https://github.com/microsoft/superuserimpact/raw/main/PDF%20Guides/Copilot%20Assisted%20Hours%20PBI%20Formulas.pdf)
+- [Copilot Studio Agents Report - Interpretation Guide (PDF)](https://github.com/microsoft/superuserimpact/raw/main/PDF%20Guides/Copilot%20Studio%20agents%20report%20-%20Interpretation%20Guide.pdf)
+- [Superuser Impact Storyboard v4 (PowerPoint)](https://github.com/microsoft/superuserimpact/raw/main/Superuser%20Impact%20-%20Storyboard%20v4.pptx)
 
 Use the included guides to:
-- Create an executive-ready presentation  
-- Define what constitutes super usage internally  
-- Highlight early activation behaviors  
-- Recommend enablement actions per org or cohort  
+- Create an executive-ready presentation
+- Define what constitutes super usage internally
+- Highlight early activation behaviors
+- Recommend enablement actions per org or cohort
 
 </details>
 
@@ -209,10 +219,10 @@ Use the included guides to:
 - Navigate to [Power BI Web](https://msit.powerbi.com/home?experience=power-bi) (you may need to login)
 - Find the Report and Semantic Model you just published.
 - Hover over the Semantic Model and click on the icon as seen below:
-![Refresh1](https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/Refresh1.png)
+![Refresh1](https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/Refresh1.png)
 - On this page, from the list of options available, click on Refresh and then configure your report as seen below in the screenshot, or as you best fits your needs.
   
-![refresh](https://raw.githubusercontent.com/microsoft/DecodingSuperUsage/refs/heads/DecodingSuperUsage/images/refresh.png)
+![refresh](https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/refresh.png)
 
   
 - For Direct Query: Reports update automatically with each weekly Viva Insights refresh, but you will still need to update the published report refresh settings as seen above. 
