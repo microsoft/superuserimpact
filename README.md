@@ -21,23 +21,6 @@ Insights into how super users of Microsoft Copilot emerge—and learn how to sca
 [Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/)
 [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
 
-<details>
-  <summary><span style="font-size:1.15em;">🎬 <b>See the Report in Action (Video)</b></span></summary>
-  <br>
-  <a href="https://www.youtube.com/watch?v=40hsLAIiiD8" target="_blank">
-    <img src="https://img.youtube.com/vi/40hsLAIiiD8/0.jpg" alt="Copilot Super Usage Report Video Thumbnail" width="100%" />
-  </a>
-</details>
-
-<details open>
-  <summary>▶️ <b>Super User Adoption Dashboard Preview</b></summary>
-
-  <br>
-
-  <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/SuperUser.gif" alt="Super User Adoption Dashboard Preview" width="100%" />
-
-</details>
-
 <details open>
   <summary>▶️ <b>Super User Impact Dashboard Preview</b></summary>
 
@@ -68,29 +51,28 @@ Super usage patterns show how experimentation turns into durable habits. Identif
 
 ## Insights you can Explore
 
-**Super usage profile:**  
-What does super usage look like? What do super users use Copilot for? Are you seeing signs of workflow changes?
+**Super Usage Profile**
+What defines super usage, which Copilot scenarios super users rely on, and whether their behavior shows early signs of workflow change.
 
-**Journey:**  
-How did some users turn into super users? What did super users do differently in the early days of license activation? How fast are you producing super users? Is super usage durable?
+**Work Impact**
+How users progress into super users, is this population growing over time?
 
-**Work patterns:**  
-What work patterns are associated with super users? Are you seeing any early impact?
+**Work Patterns**
+The distinctive work patterns of super users—including meeting habits, collaboration behaviors, and after‑hours signals.
 
-**Change management:**  
-Where are the super users concentrated? Where migh t you focus enablement efforts?
+**How They Get Work Done**
+How super users leverage Copilot across surfaces and features to drive productivity in their daily workflows.
+
+**Value**
+How assisted value differs between super users and everyone else, and what this reveals about the incremental impact of deep Copilot engagement.
 
 ---
 
 ## Templates
 
-This repository includes four Power BI templates in two categories:
+This repository includes two Power BI templates:
 
-**Super User Adoption Templates**
-- **Template - Super User Adoption (CSV Input).pbit**: Analyzes Copilot adoption patterns and super user emergence using CSV exports. Best for one-time analysis or sharing with external stakeholders.
-- **Template - Super User Adoption - (Viva Insights).pbit**: Same analytics with direct Viva Insights connection. Enables automatic refresh for ongoing monitoring.
-
-**Super User Impact Templates**  
+**Super User Impact Templates**
 - **Template - Super User Impact - (CSV Input).pbit**: Measures Copilot's impact on work patterns and productivity using CSV data. Includes estimated value and sentiment analysis.
 - **Template - Super User Impact - (Viva Insights Input).pbit**: Same analytics with direct Viva Insights connection for continuous impact tracking.
 
