@@ -1,19 +1,7 @@
-# Super Usage Analysis Template (Copilot + Viva Insights)
+# Superuser Impact Report
 ![Current Version](https://img.shields.io/badge/version-31-blue)
 
-## 📥 Quick Downloads
-
-**Power BI Templates (.pbit):**
-- [Download: Super User Impact v3 (CSV Input)](https://github.com/microsoft/superuserimpact/raw/main/Template%20-%20Super%20User%20Impact%20v3%20-%20(CSV%20Input)%20-%20Template.pbit)
-- [Download: Super User Impact v3 (Viva Insights Input)](https://github.com/microsoft/superuserimpact/raw/main/Template%20-%20Super%20User%20Impact%20v3%20-%20(Viva%20Insights%20Input)%20-%20Template.pbit)
-- [Download: Super User Impact v3 (CSV Input) - en-US](https://github.com/microsoft/superuserimpact/raw/main/en-US_Template%20-%20Super%20User%20Impact%20v3%20-%20(CSV%20Input)%20-%20Template.pbit)
-
-**Presentation Template:**
-- [Download: Superuser Impact Storyboard v4 (PowerPoint)](https://github.com/microsoft/superuserimpact/raw/main/Superuser%20Impact%20-%20Storyboard%20v4.pptx)
-
----
-
-Insights into how super users of Microsoft Copilot emerge—and learn how to scale their success across your organization.
+Insights into work patterns of superuser and the resulting impact
 
 [Download Latest (ZIP)](https://github.com/microsoft/superuserimpact/archive/refs/heads/main.zip)  
 
