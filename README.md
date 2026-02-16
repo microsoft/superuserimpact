@@ -8,6 +8,9 @@ Insights into work patterns of superuser and the resulting impact
 **Additional Resources:**
 [Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/), [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
 
+⭐ **Star this repository** to receive notifications about new template versions
+👀 **Watch** for updates and announcements
+
 <details open>
   <summary>▶️ <b>Super User Impact Dashboard Preview</b></summary>
 
