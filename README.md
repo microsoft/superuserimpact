@@ -9,6 +9,8 @@ Insights into work patterns of superuser and the resulting impact
 [Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/)
 [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
 
+[Expand All](#) • [Collapse All](#)
+
 <details open>
   <summary>▶️ <b>Super User Impact Dashboard Preview</b></summary>
 
@@ -259,3 +261,26 @@ We want to hear your feedback and suggestions. Please reach out to keithmcgrane@
     </td>
   </tr>
 </table>
+
+<script>
+// Expand/Collapse All functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href="#"]');
+    const expandLink = links[0];
+    const collapseLink = links[1];
+
+    if (expandLink) {
+        expandLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('details').forEach(d => d.open = true);
+        });
+    }
+
+    if (collapseLink) {
+        collapseLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('details').forEach(d => d.open = false);
+        });
+    }
+});
+</script>
