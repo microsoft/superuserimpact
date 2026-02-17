@@ -3,11 +3,13 @@
 
 Insights into work patterns of superuser and the resulting impact
 
-[Download Latest (ZIP)](https://github.com/microsoft/superuserimpact/archive/refs/heads/main.zip)  
+[Download Latest (ZIP)](https://github.com/microsoft/superuserimpact/archive/refs/heads/main.zip)
 
 **Additional Resources:**
-[Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/)
-[Viva Insights R Library](https://microsoft.github.io/vivainsights/)
+[Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/), [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
+
+⭐ **Star this repository** to receive notifications about new template versions
+👀 **Watch** for updates and announcements
 
 <details open>
   <summary>▶️ <b>Super User Impact Dashboard Preview</b></summary>
@@ -20,24 +22,30 @@ Insights into work patterns of superuser and the resulting impact
 
 ---
 
-## What's New
+<details open>
+<summary><strong>✨ What's New</strong></summary>
+
+<br>
+
 - NEW 'Super User Impact' dashboard that explores the impact of Copilot on work patterns (& sentiment if available) and estimated value
 - Static thresholds for usage tiers (clearer benchmarking)
 - One click zoom into superusers
-- Cross-team comparisons 
+- Cross-team comparisons
+
+</details>
 
 ---
 
-## Why Study Super Usage
+<details open>
+<summary><strong>📊 Why Study Super Usage & Insights You Can Explore</strong></summary>
+
+<br>
+
 Super usage patterns show how experimentation turns into durable habits. Identifying early signals and contextual attributes helps you:
 - Replicate adoption paths
 - Prioritize enablement
 - Benchmark across teams
 - Inspire the organization
-
----
-
-## Insights you can Explore
 
 **Super Usage Profile**
 What defines super usage, which Copilot scenarios super users rely on, and whether their behavior shows early signs of workflow change.
@@ -54,9 +62,14 @@ How super users leverage Copilot across surfaces and features to drive productiv
 **Value**
 How assisted value differs between super users and everyone else, and what this reveals about the incremental impact of deep Copilot engagement.
 
+</details>
+
 ---
 
-## Templates
+<details open>
+<summary><strong>📦 Templates</strong></summary>
+
+<br>
 
 This repository includes two Power BI templates:
 
@@ -64,20 +77,10 @@ This repository includes two Power BI templates:
 - **Template - Super User Impact - (CSV Input).pbit**: Measures Copilot's impact on work patterns and productivity using CSV data. Includes estimated value and sentiment analysis.
 - **Template - Super User Impact - (Viva Insights Input).pbit**: Same analytics with direct Viva Insights connection for continuous impact tracking.
 
-**Choosing Your Setup:**  
+**Choosing Your Setup:**
 Use **CSV templates** for ad-hoc analysis, simpler setup, or easier sharing. Use **Viva Insights templates** for automatic refresh, real-time data, and ongoing executive dashboards.
 
----
-
-## Related Tools
-
-**For Python Users:** If you prefer programmatic analysis or need custom workflows beyond these Power BI templates, check out the [Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/) for direct API access, advanced data manipulation, and integration with your Python data science stack.
-
-**For R Users:** Explore the [Viva Insights R Library](https://microsoft.github.io/vivainsights/) for statistical analysis, custom visualizations, and seamless integration with R-based data science workflows.
-
-**Sample Code & Examples:** Browse the [Viva Insights Sample Code Repository](https://github.com/microsoft/viva-insights-sample-code) for ready-to-use code examples, API integration patterns, and reference implementations across multiple programming languages.
-
-These tools enable you to build custom super usage analyses, automate reporting pipelines, and extend the insights beyond what's available in the Power BI templates.
+</details>
 
 ---
 
@@ -206,8 +209,14 @@ Use the included guides to:
 
 ---
 
-## Feedback
-We want to hear your feedback and suggestions. Please reach out to keithmcgrane@microsoft.com.
+<details>
+<summary><strong>💬 Feedback</strong></summary>
+
+<br>
+
+We want to hear your feedback and suggestions. Please reach out to keithmcgrane@microsoft.com and jordanking@microsoft.com.
+
+</details>
 
 ---
 
@@ -259,3 +268,4 @@ We want to hear your feedback and suggestions. Please reach out to keithmcgrane@
     </td>
   </tr>
 </table>
+
