@@ -1,47 +1,31 @@
-# Superuser Impact Report
-
 <div align="center">
 
-![Current Version](https://img.shields.io/badge/version-31-blue)
+<br>
 
-**Insights into work patterns of superuser and the resulting impact**
+# 🧠 Super User Impact
 
-### 📥 [Click Here to Download All Files](https://github.com/microsoft/superuserimpact/archive/refs/heads/main.zip)
+### Measure the real work-pattern impact of your Copilot super users.
 
-**Related Templates & Tools:**
+<br>
 
-[![Super User Adoption](https://img.shields.io/badge/Report-Super%20User%20Adoption-003087)](https://aka.ms/decodingsuperusage)
-[![AI-in-One Dashboard](https://img.shields.io/badge/Report-AI--in--One%20Dashboard-teal)](https://github.com/microsoft/AI-in-One-Dashboard)
-[![GitHub Copilot Impact](https://img.shields.io/badge/Report-GitHub%20Copilot%20Impact-purple)](https://github.com/microsoft/GitHubCopilotImpact)
-[![Chat Intelligence](https://img.shields.io/badge/Report-Chat%20Intelligence-orange)](https://github.com/microsoft/CopilotChatAnalytics)
-[![PBI to Exec Deck](https://img.shields.io/badge/Tool-PBI%20to%20Exec%20Deck-red)](https://github.com/shailendrahegde/pbi-to-exec-deck)
+[![Built by Microsoft](https://img.shields.io/badge/Built%20by-Microsoft-0078d4?style=for-the-badge&logo=microsoft&logoColor=white)](https://microsoft.github.io/Analytics-Hub/team/)
+[![Analytics Hub](https://img.shields.io/badge/Analytics%20Hub-11%20Repositories-8661c5?style=for-the-badge&logo=github&logoColor=white)](https://microsoft.github.io/Analytics-Hub/)
 
-**Additional Resources:**
-[Viva Insights Python Library](https://microsoft.github.io/vivainsights-py/), [Viva Insights R Library](https://microsoft.github.io/vivainsights/)
+<br>
 
-⭐ **Star this repository** to receive notifications about new template versions
-👀 **Watch** for updates and announcements
+**Found this useful? ⭐ Star this repo to help others discover it!**
+
+<br>
+
+**[What's New ↓](#whats-new)** &nbsp;·&nbsp; **[Preview ↓](#dashboard-preview)** &nbsp;·&nbsp; **[Instructions ↓](#instructions)** &nbsp;·&nbsp; **[Next Steps ↓](#next-steps)** &nbsp;·&nbsp; **[Email your Admin ↓](#email-your-admin)**
+
+<br>
 
 </div>
 
-> 📧 **Before you begin, your Viva Insights admin needs to set up a Person Query.**
-> This pre-written email covers all required metric groups, query settings, attributes, admin roles, and connection options — everything your admin needs in one click.
->
-> **[📨 Email Prerequisites to Your IT Admin](mailto:?subject=Action%20Required%3A%20Viva%20Insights%20Query%20Setup%20Needed%20for%20Super%20User%20Impact%20Report%20%28Power%20BI%29&body=To%3A%20IT%20Admin%20%2F%20Global%20Admin%20%2F%20Viva%20Insights%20Administrator%0ARe%3A%20Super%20User%20Impact%20%E2%80%93%20Power%20BI%20Report%20Setup%0A%0A%0AWHAT%20THIS%20REPORT%20DOES%0A%0AThe%20Super%20User%20Impact%20Report%20is%20a%20Power%20BI%20report%20powered%20by%20Viva%20Insights%20data.%20Where%20the%20Super%20User%20Adoption%20report%20tracks%20who%20super%20users%20are%2C%20this%20report%20measures%20what%20changed%20in%20their%20work%20patterns%20as%20a%20result%20of%20Copilot%20adoption%20%E2%80%94%20including%20collaboration%20hours%2C%20meeting%20load%2C%20focus%20time%2C%20and%20estimated%20time%20saved.%20Includes%20cross-team%20benchmarking%20and%20optional%20sentiment%20signal%20analysis.%20Used%20to%20demonstrate%20ROI%20and%20guide%20change%20management.%0A%0A%0ADATA%20SOURCE%20REQUIRED%0A%0AViva%20Insights%20%E2%80%93%20Person%20Query%0AExport%3A%20analysis.insights.cloud.microsoft%20-%3E%20Create%20analysis%20-%3E%20Person%20query%0AFormat%3A%20CSV%20or%20Direct%20Query%20%28via%20Partition%20ID%20%2B%20Query%20ID%29%0A%0A%0AREQUIRED%20FIELDS%20%E2%80%94%20DO%20NOT%20REMOVE%0A%0AIMPORTANT%3A%20This%20report%20uses%20the%20same%20Viva%20Insights%20Person%20Query%20as%20the%20Super%20User%20Adoption%20report.%20All%20metric%20groups%20must%20be%20selected%20in%20full.%20Partial%20exports%20or%20manually%20edited%20CSVs%20with%20removed%20columns%20will%20cause%20blank%20visuals%20and%20broken%20calculations.%0A%0APerson%20Query%20%E2%80%94%20Required%20Metric%20Groups%20%28select%20%22All%20metrics%22%20for%20each%29%3A%0AMicrosoft%20365%20Copilot%20%28all%20metrics%29%2C%20Collaboration%20network%20%28all%20metrics%29%2C%20Working%20hours%20collaboration%20%28all%20metrics%29%2C%20Focus%20metrics%20%28all%20metrics%29.%0A%0ASpecific%20fields%20the%20report%20depends%20on%3A%0ACopilot_Active_Use_Days_per_week%2C%20Copilot_Total_Actions%2C%20Copilot_Total_Chats%2C%20Collaboration_hours%2C%20Meeting_hours%2C%20After_hours_collaboration_hours%2C%20Email_hours%2C%20Meeting_hours_with_manager_1_on_1%2C%20Focus_hours%2C%20Uninterrupted_focus_hours%2C%20Internal_network_size%2C%20Strong_ties%2C%20Diverse_ties.%0A%0APerson%20Query%20%E2%80%94%20Required%20Attributes%20%28Dimensions%29%3A%0APersonId%2C%20Organization%2C%20FunctionType%2C%20TimeZone%2C%20IsActive.%0A%0AQuery%20Configuration%20%E2%80%94%20Required%20Settings%3A%0A-%20Time%20period%3A%20Last%206%20months%20%28rolling%29%0A-%20Group%20by%3A%20Week%20%28not%20Month%29%0A-%20Filter%3A%20Is%20Active%20%3D%20True%0A%0A%0AINSIGHTS%20YOU%20WILL%20GAIN%0A%0A-%20Work%20pattern%20delta%20analysis%3A%20how%20collaboration%20hours%2C%20meeting%20time%2C%20email%20time%2C%20and%20focus%20time%20differ%20between%20super%20users%20and%20their%20peers%0A-%20After-hours%20work%20impact%3A%20whether%20Copilot%20adoption%20correlates%20with%20better%20or%20worse%20work-life%20balance%20signals%0A-%20Time%20saved%20estimation%3A%20calculated%20value%20model%20based%20on%20total%20Copilot%20actions%0A-%20Network%20changes%3A%20whether%20super%20users%20have%20broader%20or%20deeper%20internal%20collaboration%20networks%0A-%20Cross-team%20benchmarking%3A%20compare%20impact%20signals%20across%20organizations%2C%20function%20types%2C%20and%20usage%20tiers%0A-%20Manager%201%3A1%20time%3A%20changes%20in%20coaching%20and%20alignment%20meeting%20patterns%0A%0A%0AROLES%20%26%20PERMISSIONS%20REQUIRED%0A%0ACreate%20and%20run%20Person%20Query%20in%20Viva%20Insights%3A%20Insights%20Analyst%20%28assigned%20in%20Viva%20Insights%20Admin%29%0AAccess%20Viva%20Insights%20Analyst%20Workbench%3A%20Insights%20Analyst%20or%20Insights%20Administrator%0AExport%20query%20results%20as%20CSV%3A%20Insights%20Analyst%0A%0A%0ASOFTWARE%20REQUIREMENTS%0A%0A-%20Power%20BI%20Desktop%20%E2%80%94%20required%20to%20open%20the%20.pbit%20template%20file%0A-%20Access%20to%3A%20analysis.insights.cloud.microsoft%20%28Viva%20Insights%20Analyst%20Workbench%29%0A-%20Microsoft%20365%20Viva%20Insights%20license%20%E2%80%94%20required%20for%20the%20organization%20to%20generate%20Person%20Query%20data%0A%0A%0ANote%3A%0AThe%20Super%20User%20Impact%20report%20uses%20the%20same%20Person%20Query%20as%20the%20Super%20User%20Adoption%20report.%20If%20both%20reports%20are%20being%20deployed%20simultaneously%2C%20a%20single%20query%20export%20can%20feed%20both%20templates%20%E2%80%94%20no%20need%20to%20run%20separate%20queries.)**
-
 ---
 
-<details open>
-  <summary>▶️ <b>Super User Impact Dashboard Preview</b></summary>
-
-  <br>
-
-  <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/report-preview.gif" alt="Super User Impact Dashboard Preview" width="100%" />
-
-</details>
-
-
----
+<a id="whats-new"></a>
 
 <details open>
 <summary><strong>✨ What's New</strong></summary>
@@ -54,6 +38,20 @@
 - Cross-team comparisons
 
 </details>
+
+---
+
+<a id="dashboard-preview"></a>
+
+<details open>
+  <summary>▶️ <b>Super User Impact Dashboard Preview</b></summary>
+
+  <br>
+
+  <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/report-preview.gif" alt="Super User Impact Dashboard Preview" width="100%" />
+
+</details>
+
 
 ---
 
@@ -83,6 +81,8 @@ Where are the super users concentrated? Where might you focus enablement efforts
 </details>
 
 ---
+
+<a id="instructions"></a>
 
 <details open>
 <summary><strong style="font-size:1.5em;">📋 Instructions</strong></summary>
@@ -141,6 +141,7 @@ Open the [Viva Insights Analyst Workbench](https://analysis.insights.cloud.micro
 
 ---
 
+<a id="next-steps"></a>
 ## Next Steps
 
 <details>
@@ -228,6 +229,17 @@ It turns raw outputs into **exec-ready PPTs** with insights pre-baked.
 All you do: verify, tweak, ship.
 
 </details>
+
+---
+
+---
+
+<a id="email-your-admin"></a>
+
+> 📧 **Before you begin, your Viva Insights admin needs to set up a Person Query.**
+> This pre-written email covers all required metric groups, query settings, attributes, admin roles, and connection options — everything your admin needs in one click.
+>
+> **[📨 Email Prerequisites to Your IT Admin](mailto:?subject=Action%20Required%3A%20Viva%20Insights%20Query%20Setup%20Needed%20for%20Super%20User%20Impact%20Report%20%28Power%20BI%29&body=To%3A%20IT%20Admin%20%2F%20Global%20Admin%20%2F%20Viva%20Insights%20Administrator%0ARe%3A%20Super%20User%20Impact%20%E2%80%93%20Power%20BI%20Report%20Setup%0A%0A%0AWHAT%20THIS%20REPORT%20DOES%0A%0AThe%20Super%20User%20Impact%20Report%20is%20a%20Power%20BI%20report%20powered%20by%20Viva%20Insights%20data.%20Where%20the%20Super%20User%20Adoption%20report%20tracks%20who%20super%20users%20are%2C%20this%20report%20measures%20what%20changed%20in%20their%20work%20patterns%20as%20a%20result%20of%20Copilot%20adoption%20%E2%80%94%20including%20collaboration%20hours%2C%20meeting%20load%2C%20focus%20time%2C%20and%20estimated%20time%20saved.%20Includes%20cross-team%20benchmarking%20and%20optional%20sentiment%20signal%20analysis.%20Used%20to%20demonstrate%20ROI%20and%20guide%20change%20management.%0A%0A%0ADATA%20SOURCE%20REQUIRED%0A%0AViva%20Insights%20%E2%80%93%20Person%20Query%0AExport%3A%20analysis.insights.cloud.microsoft%20-%3E%20Create%20analysis%20-%3E%20Person%20query%0AFormat%3A%20CSV%20or%20Direct%20Query%20%28via%20Partition%20ID%20%2B%20Query%20ID%29%0A%0A%0AREQUIRED%20FIELDS%20%E2%80%94%20DO%20NOT%20REMOVE%0A%0AIMPORTANT%3A%20This%20report%20uses%20the%20same%20Viva%20Insights%20Person%20Query%20as%20the%20Super%20User%20Adoption%20report.%20All%20metric%20groups%20must%20be%20selected%20in%20full.%20Partial%20exports%20or%20manually%20edited%20CSVs%20with%20removed%20columns%20will%20cause%20blank%20visuals%20and%20broken%20calculations.%0A%0APerson%20Query%20%E2%80%94%20Required%20Metric%20Groups%20%28select%20%22All%20metrics%22%20for%20each%29%3A%0AMicrosoft%20365%20Copilot%20%28all%20metrics%29%2C%20Collaboration%20network%20%28all%20metrics%29%2C%20Working%20hours%20collaboration%20%28all%20metrics%29%2C%20Focus%20metrics%20%28all%20metrics%29.%0A%0ASpecific%20fields%20the%20report%20depends%20on%3A%0ACopilot_Active_Use_Days_per_week%2C%20Copilot_Total_Actions%2C%20Copilot_Total_Chats%2C%20Collaboration_hours%2C%20Meeting_hours%2C%20After_hours_collaboration_hours%2C%20Email_hours%2C%20Meeting_hours_with_manager_1_on_1%2C%20Focus_hours%2C%20Uninterrupted_focus_hours%2C%20Internal_network_size%2C%20Strong_ties%2C%20Diverse_ties.%0A%0APerson%20Query%20%E2%80%94%20Required%20Attributes%20%28Dimensions%29%3A%0APersonId%2C%20Organization%2C%20FunctionType%2C%20TimeZone%2C%20IsActive.%0A%0AQuery%20Configuration%20%E2%80%94%20Required%20Settings%3A%0A-%20Time%20period%3A%20Last%206%20months%20%28rolling%29%0A-%20Group%20by%3A%20Week%20%28not%20Month%29%0A-%20Filter%3A%20Is%20Active%20%3D%20True%0A%0A%0AINSIGHTS%20YOU%20WILL%20GAIN%0A%0A-%20Work%20pattern%20delta%20analysis%3A%20how%20collaboration%20hours%2C%20meeting%20time%2C%20email%20time%2C%20and%20focus%20time%20differ%20between%20super%20users%20and%20their%20peers%0A-%20After-hours%20work%20impact%3A%20whether%20Copilot%20adoption%20correlates%20with%20better%20or%20worse%20work-life%20balance%20signals%0A-%20Time%20saved%20estimation%3A%20calculated%20value%20model%20based%20on%20total%20Copilot%20actions%0A-%20Network%20changes%3A%20whether%20super%20users%20have%20broader%20or%20deeper%20internal%20collaboration%20networks%0A-%20Cross-team%20benchmarking%3A%20compare%20impact%20signals%20across%20organizations%2C%20function%20types%2C%20and%20usage%20tiers%0A-%20Manager%201%3A1%20time%3A%20changes%20in%20coaching%20and%20alignment%20meeting%20patterns%0A%0A%0AROLES%20%26%20PERMISSIONS%20REQUIRED%0A%0ACreate%20and%20run%20Person%20Query%20in%20Viva%20Insights%3A%20Insights%20Analyst%20%28assigned%20in%20Viva%20Insights%20Admin%29%0AAccess%20Viva%20Insights%20Analyst%20Workbench%3A%20Insights%20Analyst%20or%20Insights%20Administrator%0AExport%20query%20results%20as%20CSV%3A%20Insights%20Analyst%0A%0A%0ASOFTWARE%20REQUIREMENTS%0A%0A-%20Power%20BI%20Desktop%20%E2%80%94%20required%20to%20open%20the%20.pbit%20template%20file%0A-%20Access%20to%3A%20analysis.insights.cloud.microsoft%20%28Viva%20Insights%20Analyst%20Workbench%29%0A-%20Microsoft%20365%20Viva%20Insights%20license%20%E2%80%94%20required%20for%20the%20organization%20to%20generate%20Person%20Query%20data%0A%0A%0ANote%3A%0AThe%20Super%20User%20Impact%20report%20uses%20the%20same%20Person%20Query%20as%20the%20Super%20User%20Adoption%20report.%20If%20both%20reports%20are%20being%20deployed%20simultaneously%2C%20a%20single%20query%20export%20can%20feed%20both%20templates%20%E2%80%94%20no%20need%20to%20run%20separate%20queries.)**
 
 ---
 
