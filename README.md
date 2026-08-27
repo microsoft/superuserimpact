@@ -22,7 +22,7 @@
 
 <br>
 
-**[What's New ↓](#whats-new)** &nbsp;·&nbsp; **[Preview ↓](#dashboard-preview)** &nbsp;·&nbsp; **[Instructions ↓](#instructions)** &nbsp;·&nbsp; **[Next Steps ↓](#next-steps)** &nbsp;·&nbsp; **[Email your Admin ↓](#email-your-admin)**
+**[What's New ↓](#whats-new)** &nbsp;·&nbsp; **[Preview ↓](#dashboard-preview)** &nbsp;·&nbsp; **[Watch First ↓](#-watch-first)** &nbsp;·&nbsp; **[Instructions ↓](#instructions)** &nbsp;·&nbsp; **[Next Steps ↓](#next-steps)** &nbsp;·&nbsp; **[Email your Admin ↓](#email-your-admin)**
 
 <br>
 
@@ -56,6 +56,17 @@
   <img src="https://raw.githubusercontent.com/microsoft/superuserimpact/main/images/report-preview.gif" alt="Super User Impact Dashboard Preview" width="100%" />
 
 </details>
+
+
+<a id="-watch-first"></a>
+
+## 🎬 Watch First
+
+Plays here in the page — no download.
+
+**A guided tour of the report** — measure the real work-pattern impact of your Copilot super users. *(1m 41s)*
+
+https://github.com/user-attachments/assets/b8935dae-6936-42d2-9dec-5befd4a97d42
 
 
 ---
