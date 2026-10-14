@@ -62,11 +62,11 @@
 
 ## 🎬 Watch First
 
-Plays here in the page — no download.
-
 **A guided tour of the report** — measure the real work-pattern impact of your Copilot super users. *(1m 41s)*
 
-https://github.com/user-attachments/assets/b8935dae-6936-42d2-9dec-5befd4a97d42
+[![Watch the overview on YouTube](https://img.youtube.com/vi/HKSIfh0Jf8k/maxresdefault.jpg)](https://youtu.be/HKSIfh0Jf8k)
+
+**▶ [Watch on YouTube](https://youtu.be/HKSIfh0Jf8k)**
 
 
 ---
